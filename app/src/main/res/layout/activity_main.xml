@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="184dp"
+        android:foregroundGravity="center_horizontal"
+        android:text="0.0 / 0.0"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_start_update"
+        android:layout_width="85dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stop_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_location"
+        app:srcCompat="@drawable/btn_start_update" />
+
+    <ImageView
+        android:id="@+id/btn_stop_update"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="68dp"
+        android:saveEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_start_update"
+        app:layout_constraintTop_toBottomOf="@+id/text_location"
+        app:srcCompat="@drawable/btn_stop_update" />
+</androidx.constraintlayout.widget.ConstraintLayout>
